@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: #dddddd;
+    padding: 5px;
+    border-bottom: #1f60af solid 4px;
+
+}
+
+header p {
+/* Verdana is closest to instrument sans (used in the figma)*/
+    font-family: Verdana, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 19px;
+}
+
+/* Title */
+header h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding-left: 160px;
+    font-size: 35px;
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    background-color: #dddddd;
+}
