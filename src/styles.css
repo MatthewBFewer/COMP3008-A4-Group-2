@@ -46,8 +46,8 @@ footer {
     border: #d1d1d1 solid 1px;
     font-family: Verdana, Tahoma, sans-serif;
     margin-top: 3em; /*may need to change later*/
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 5em;
+    margin-right: 5em;
     padding: 0.5em;
     border-radius: 0.3em;
     min-width: 14em;
@@ -58,4 +58,34 @@ footer {
     list-style-type: none;
     display: flex;
     justify-content: center;
+}
+
+/* fake webpage path + view embassies link */
+/* to whom it may concern: the path is fake because this is not actually part of the canada.ca domain */
+#upper-main {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0.5em;
+    /*keeps 1st li on the left of the viewport, and the 2nd on the right */
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#upper-main li {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 0.5em;
+}
+
+
+#upper-main li#first, #upper-main li a{
+    color: #1f60af;
+}
+
+#upper-main li#first span {
+    color: #000000;
 }
