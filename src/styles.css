@@ -13,6 +13,7 @@ header {
 
 }
 
+/* Government of Canada text */
 header p {
 /* Verdana is closest to instrument sans (used in the figma)*/
     font-family: Verdana, Tahoma, sans-serif;
@@ -24,15 +25,37 @@ header p {
 /* Title */
 header h1 {
     font-family: Verdana, Tahoma, sans-serif;
-    padding-left: 160px;
+    padding-left: 140px;
     font-size: 35px;
 }
 
 main {
     flex: 1;
+    justify-content: center;
+    background-color: #f1f1f1;
 }
 
 footer {
     display: flex;
     background-color: #dddddd;
+}
+
+/* dropdowns */
+#dropdowns li select {
+    background: #ffffff;
+    border: #d1d1d1 solid 1px;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-top: 3em; /*may need to change later*/
+    margin-left: 4em;
+    margin-right: 4em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    min-width: 14em;
+}
+
+/* dropdown list */
+#dropdowns {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
