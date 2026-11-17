@@ -37,7 +37,7 @@ main {
 
 /* dropdowns */
 #dropdowns li select {
-    background: #ffffff;
+    background-color: #ffffff;
     border: #d1d1d1 solid 1px;
     font-family: Verdana, Tahoma, sans-serif;
     margin-top: 3em; /*may need to change later*/
@@ -48,6 +48,10 @@ main {
     min-width: 14em;
 }
 
+#dropdowns li select:hover {
+    background-color: #d1d1d1;
+}
+
 /* dropdown list */
 #dropdowns {
     list-style-type: none;
@@ -55,8 +59,7 @@ main {
     justify-content: center;
 }
 
-/* fake webpage path + view embassies link */
-/* to whom it may concern: the path is fake because this is not actually part of the canada.ca domain */
+/* canada.ca webpage path + view embassies link*/
 #upper-main {
     list-style-type: none;
     display: flex;
