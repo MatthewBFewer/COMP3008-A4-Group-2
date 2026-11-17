@@ -35,11 +35,6 @@ main {
     background-color: #f1f1f1;
 }
 
-footer {
-    display: flex;
-    background-color: #dddddd;
-}
-
 /* dropdowns */
 #dropdowns li select {
     background: #ffffff;
@@ -103,3 +98,30 @@ footer {
     font-weight: 500;
 }
 
+
+/* footer */
+footer {
+    display: flex;
+    background-color: #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+/* terms and conditions text */
+footer #other {
+    display: flex;
+}
+
+footer #other p {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #515151;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+footer #img-div {
+    display: flex;
+    padding-right: 30px;
+}
