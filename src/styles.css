@@ -89,3 +89,17 @@ footer {
 #upper-main li#first span {
     color: #000000;
 }
+
+/* location table area */
+#content {
+    justify-self: center;
+    padding-top: 40px;
+}
+
+/* select a service text */
+#content h2 {
+    font-size: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
