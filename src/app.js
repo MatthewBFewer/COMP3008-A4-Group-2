@@ -25,15 +25,15 @@ function load_location_data(location) {
         li.appendChild(name);
 
         let hours = document.createElement("p");
-        hours.innerText = current_selection[i].service_hours;
+        hours.innerText = "Hours of service: " + current_selection[i].service_hours;
         li.appendChild(hours);
 
         let wait_time = document.createElement("p");
-        wait_time.innerText = current_selection[i].est_wait_time + " min";
+        wait_time.innerText = "Estimated wait time: " + current_selection[i].est_wait_time + " min";
         li.appendChild(wait_time);
 
         let distance = document.createElement("p");
-        distance.innerText = current_selection[i].distance + " km";
+        distance.innerText = "Distance: " + current_selection[i].distance + " km";
         li.appendChild(distance);
 
         location_data.appendChild(li);
