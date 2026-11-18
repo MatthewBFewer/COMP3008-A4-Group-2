@@ -47,6 +47,23 @@ locationDropdown.addEventListener("change", function() {
 });
 
 
+// reset all search filters and clear displayed offices
+const clearFiltersButton = document.getElementById("clear-filters");
+
+clearFiltersButton.addEventListener("click", function() {
+    // reset dropdowns to their placeholder options
+    document.getElementById("service").selectedIndex = 0;
+    document.getElementById("delivery").selectedIndex = 0;
+    document.getElementById("location").selectedIndex = 0;
+
+    // remove displayed office results
+    location_data.replaceChildren();
+
+    // restore the original instruction
+    document.querySelector("#content h2").textContent =
+        "Select a service and location to view offices";
+});
+
 
 // displays all offices for the given location
 function load_location_data(location) {
