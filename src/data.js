@@ -1,6 +1,6 @@
 // All data to be dynamically loaded (locations + dropdown options)
 
-const location_data = {
+const locations = {
     Gatineau: [
         {
             name: "Gatineau-Hull Service Canada Centre and Passport Services",
@@ -29,7 +29,7 @@ const location_data = {
     Cornwall: []
 };
 
-const dropdown_data = {
+const dropdown_options = {
     Service: ["Passport & Biometrics","Other"],
     Delivery: ["2-9 Business Days","10-19 Business Days","20+ Business Days"],
     Location: ["Current Location","Ottawa","Gatineau","Cornwall"]

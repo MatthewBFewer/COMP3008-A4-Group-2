@@ -101,6 +101,19 @@ main {
     font-weight: 500;
 }
 
+/* location card+data */
+.location {
+    background-color: #ffffff;
+    border: #d1d1d1 solid 1px;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.location a {
+    color: #1f60af;
+    font-weight: bold;
+}
+
 
 /* footer */
 footer {
