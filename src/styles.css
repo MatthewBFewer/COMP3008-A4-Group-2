@@ -124,7 +124,8 @@ main {
 
 /* location table area */
 #content {
-    justify-self: center;
+    width: 100%;
+    text-align: center;
     padding-top: 40px;
 }
 
@@ -138,6 +139,9 @@ main {
 /* location card+data */
 #location-data {
     list-style-type: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .location {
@@ -148,6 +152,7 @@ main {
     margin-top: 9px;
     margin-bottom: 9px;
     line-height: 0.5em;
+    text-align: left;
 }
 
 .location a {
@@ -155,6 +160,13 @@ main {
     font-weight: bold;
 }
 
+/* no matching offices message */
+#location-data h3 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #515151;
+}
 
 /* footer */
 footer {
