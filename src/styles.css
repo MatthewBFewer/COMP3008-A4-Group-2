@@ -59,6 +59,36 @@ main {
     justify-content: center;
 }
 
+
+/* clear filters button */
+#filter-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    margin-top: 2.5em;
+}
+
+#clear-filters {
+    background-color: #ffffff;
+    color: #1f60af;
+    border: 1px solid #1f60af;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#clear-filters:hover {
+    background-color: #e4edf8;
+}
+
+#clear-filters:focus-visible {
+    outline: 3px solid #1f60af;
+    outline-offset: 3px;
+}
+
+
 /* canada.ca webpage path + view embassies link*/
 #upper-main {
     list-style-type: none;
