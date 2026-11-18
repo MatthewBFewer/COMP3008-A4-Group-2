@@ -40,12 +40,16 @@ main {
     background-color: #ffffff;
     border: #d1d1d1 solid 1px;
     font-family: Verdana, Tahoma, sans-serif;
-    margin-top: 3em; /*may need to change later*/
+    margin-top: 3em;
     margin-left: 5em;
     margin-right: 5em;
     padding: 0.5em;
     border-radius: 0.3em;
     min-width: 14em;
+}
+
+#dropdowns li select option {
+    background-color: #ffffff;
 }
 
 #dropdowns li select:hover {
