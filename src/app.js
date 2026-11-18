@@ -46,6 +46,18 @@ locationDropdown.addEventListener("change", function() {
     load_location_data(selectedLocation);
 });
 
+// update office results when the completion time changes
+const deliveryDropdown = document.getElementById("delivery");
+
+deliveryDropdown.addEventListener("change", function() {
+    const selectedLocation = locationDropdown.value;
+
+    // Only load results if a city has been selected
+    if (selectedLocation !== "" &&
+        selectedLocation !== "Current Location") {
+        load_location_data(selectedLocation);
+    }
+});
 
 // reset all search filters and clear displayed offices
 const clearFiltersButton = document.getElementById("clear-filters");
@@ -67,11 +79,30 @@ clearFiltersButton.addEventListener("click", function() {
 
 // displays all offices for the given location
 function load_location_data(location) {
+    const selectedDelivery = document.getElementById("delivery").value;
 
-    const current_selection = locations[location];
+    let current_selection = locations[location] || [];
+
+    // filter by timeframe if one has been selected
+    if (selectedDelivery !== "") {
+        current_selection = current_selection.filter(office =>
+            office.delivery_times.includes(selectedDelivery)
+        );
+    }
 
     // clear previous locations
     location_data.replaceChildren();
+
+    // display feedback if no offices match the selected timeframe
+    if (current_selection.length === 0) {
+        const item = document.createElement("li");
+        const message = document.createElement("h3");
+        message.textContent =
+            "No offices match your selected location and completion time. Try changing your filters.";
+        item.appendChild(message);
+        location_data.appendChild(item);
+        return;
+    }
 
     // add new ones
     for (let i=0;i<current_selection.length;i++) {
